@@ -1,4 +1,4 @@
-# CDLI Tablet App made using FLutter
+# CDLI Tablet App made using Flutter
 
 A new Flutter project.
 
