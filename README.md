@@ -1,4 +1,4 @@
-# firstapp
+# CDLI Tablet App made using FLutter
 
 A new Flutter project.
 
