@@ -12,31 +12,31 @@ My plan on how to fetch data from json array :
 
 ➔ To do this task, we’ll use 2 Flutter libraries :
 - HTTP​ for network calls.
-- json_annotation​ for annotating your JSON model classes.
+- json_annotation​ for annotating your JSON model classes.<br>
 ➔ Since, a class defines the fields you’ll pull from the JSON, following classes will be
 present inside ​ Cuneiform_Data.dart ​ file :
 - CuneiformData : class having attributes ​ url, thumbnail, theme, title, blurb,
 description ​ and​ date.
-- CuneiformDataList : class to hold dart list of CuneiformData.
+- CuneiformDataList : class to hold dart list of CuneiformData.<br>
 ➔ Naming Convention :
 - Here, CuneiformData class is used to fetch the overall data of each entry from
 the json array, which will be displayed in several routes.
-- So, basically we are fetching “Data” of each “Cuneiform”, hence CuneiformData.
+- So, basically we are fetching “Data” of each “Cuneiform”, hence CuneiformData.<br>
 ➔ We’ll also use two development libraries that create helper classes for converting
 JSON strings into our model objects :
 - build_runner​ , which runs your json_serializable library.
 - json_serializable​ , which creates the extra helper classes that convert strings
-into your models.
+into your models.<br>
 ➔ And, the URL that we’ll be using to fetch data is :
 https://cdli.ucla.edu/cdlitablet_android/fetchdata.php<br><br>
 
 <b>FLOW DIAGRAM</b> 
 
-<imr src="./CDLI_ULTRA_UPDATE_JSONFETCH.png">
+<imr src="./CDLI_ULTRA_UPDATE_JSONFETCH.jpg">
 
 <b>Source</b> : My brain + draw.io<br>
 
-<b>Note</b> :	
+<b>Note</b> :<br>	
         ➢ *​ ​: Problem -> ​ Here we are ​ not​ passing the date(or any attribute that uniquely
 	identifies an entry) of the tapped item to CuneiformInfoPage() to display that
 	entry’s info. Because if we do that, we’d once again call the API to fetch the data
