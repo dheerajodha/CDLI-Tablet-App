@@ -1,14 +1,14 @@
 # CDLI Tablet App made using Flutter
 
-ABOUT : CDLI already has it's Android and iPad application published on stores to allow users of app to learn about ancient history, one entry at a time. By "entry", I mean daily entry, the current apps add a new entry each day to give the users something new to look and learn each day. These entries contain an image of an artifact/cunieform/sculptures of historical interests, along with a description about them.<br><br>
+<b>ABOUT</b> : CDLI already has it's Android and iPad application published on stores to allow users of app to learn about ancient history, one entry at a time. By "entry", I mean daily entry, the current apps add a new entry each day to give the users something new to look and learn each day. These entries contain an image of an artifact/cunieform/sculptures of historical interests, along with a description about them.<br><br>
 
-PURPOSE : This project works on to develop new mobile applications for CDLI developed
+<b>PURPOSE</b> : This project works on to develop new mobile applications for CDLI developed
 completely by Flutter so that we won’t need two seperate mobile applications for both
 android and apple devices, this would help in saving lost of time and energy in
 maintaining both the apps. Also, this gave me an opportunity to learn about Flutter, and at the same time, to work on my first Open Source Project.<br><br>
 
 
-My plan on how to fetch data from json array : 
+<b>MY PLAN</b> (on how to fetch data from json array) : 
 
 ➔ To do this task, we’ll use 2 Flutter libraries :
 - HTTP​ for network calls.
@@ -36,17 +36,17 @@ https://cdli.ucla.edu/cdlitablet_android/fetchdata.php<br><br>
 
 <b>FLOW DIAGRAM</b> 
 
-<imr src="./CDLI_ULTRA_UPDATE_JSONFETCH.jpg">
+<img src="./CDLI_ULTRA_UPDATE_JSONFETCH.jpg">
 
 <b>Source</b> : My brain + draw.io<br>
 
 <b>Note</b> :<br>	
-        ➢ *​ ​: Problem -> ​ Here we are ​ not​ passing the date(or any attribute that uniquely
+        ➢ *​ ​: <i>Problem</i> -> ​ Here we are ​ not​ passing the date(or any attribute that uniquely
 	identifies an entry) of the tapped item to CuneiformInfoPage() to display that
 	entry’s info. Because if we do that, we’d once again call the API to fetch the data
 	of the tapped item, and since async functions are time consuming, we should
 	avoid them as much as possible.<br>
-	Solution -> ​ Hence, what we can do is, we directly pass the tapped object
+	<i>Solution</i> -> ​ Hence, what we can do is, we directly pass the tapped object
 	itself to the CuneiformInfoPage(), so we can directly access the attribute value of
 	the tapped object using the dot operator. Here we don’t need to call the API
 	again to fetch data.<br>
