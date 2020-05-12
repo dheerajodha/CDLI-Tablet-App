@@ -57,6 +57,16 @@ https://cdli.ucla.edu/cdlitablet_android/fetchdata.php<br><br>
 	models), its job is to hold a Dart list of CuneiformsData to be displayed.<br>
         ➢ [3] : ​ This class is present inside Cuneiform_Info_Page.dart file, it’s job is to
 	display ‘url’, ’title’, ‘blurb’ and ‘description’ of the tapped item.<br><br>
+	
+<b>SMALL DEMO :</b><br>
+The current CDLI mobile applications do not have a welcome screen, so I thought it would be nice to add a new route which would include everything that the app contains, but in a brief manner. Due to this, user can quickly absorb what the app is about.<br>
+![](landingDemo.gif)<br>
+Note : <br>
+-Here, the tag "Entry of the day" will automatically come under the latest entry each day.
+
+-I have used a timer to make sure that the image shift to left side after every 5 seconds. Towards the end of this video I scrolled it by myself to traverse the images by my control that's why it may look very fast.
+
+-I understand that I need to spend more hours on improving the UI and make it more appealing. 
 
 
 ## Getting Started
