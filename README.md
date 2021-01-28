@@ -16,24 +16,6 @@ https://cdli.ucla.edu/cdlitablet_android/fetchdata.php<br><br>
 <img src="./CDLI_ULTRA_UPDATE_JSONFETCH.jpg">
 
 <b>Source</b> : My brain + draw.io<br>
-
-> <b>Note</b> :<br>	
-> *​ ​: <i>Problem</i> -> ​ Here we are ​ not​ passing the date(or any attribute that uniquely
-	identifies an entry) of the tapped item to CuneiformInfoPage() to display that
-	entry’s info. Because if we do that, we’d once again call the API to fetch the data
-	of the tapped item, and since async functions are time consuming, we should
-	avoid them as much as possible.<br>
-	<i>Solution</i> -> ​ Hence, what we can do is, we directly pass the tapped object
-	itself to the CuneiformInfoPage(), so we can directly access the attribute value of
-	the tapped object using the dot operator. Here we don’t need to call the API
-	again to fetch data.<br>
-> ➢ [1] : ​ This class is present inside Cuneiform_Collection_Page.dart file, it’s job is to
-	fetch the ‘thumbnail’ and ‘date’ from the json array, and display them in form of
-	GridView.<br>
-> ➢ [2] : ​ This class is present inside the Cuneiform_Data.dart file (which stores our
-	models), its job is to hold a Dart list of CuneiformsData to be displayed.<br>
-> ➢ [3] : ​ This class is present inside Cuneiform_Info_Page.dart file, it’s job is to
-	display ‘url’, ’title’, ‘blurb’ and ‘description’ of the tapped item.<br><br>
 	
 <b>SMALL DEMO :</b><br>
 The current CDLI mobile applications do not have a welcome screen, so I thought it could be one of the new features to add a new route which would include everything that the app contains, but in a brief manner. Due to this, user can quickly absorb what the app is all about.<br>
